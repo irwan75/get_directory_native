@@ -10,7 +10,8 @@ public class SwiftGetDirectoryNativePlugin: NSObject, FlutterPlugin {
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     // result("iOS " + UIDevice.current.systemVersion)
-    var urlString: String = getDocumentsDirectory().absoluteString
+    // var urlString: String = getDocumentsDirectory().absoluteString
+    var urlString: String = "get_directory_native"
     result(urlString)
   }
 
